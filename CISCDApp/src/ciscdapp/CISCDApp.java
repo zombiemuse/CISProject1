@@ -1,7 +1,5 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Stuff and thangs
  */
 package ciscdapp;
 
@@ -9,7 +7,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author xxzom
+ * @author Gary McCormack
  */
 public class CISCDApp {
 
@@ -27,15 +25,15 @@ public class CISCDApp {
             command = command.toLowerCase();
             switch(command){
                 case "commands":
-                    System.out.println("Commands: shows a list of all available commands\n" +
-                            "List: lists the inventory of cars\n" +
-                            "Compare [n1] [n2]: compares two cars\n" +
-                            "Select [n]: selects car No. n and shows the details\n" +
-                            "Engine: shows the details of the engine of the selected car\n" +
-                            "Interior: Show the details of the interior of the selected car\n" +
-                            "Trunk: Show the items in the trunk of the selected car\n" +
-                            "Options: show the details of options installed on the selected car\n" +
-                            "Quit: terminate the program");
+                    System.out.println("Commands: shows a list of all available commands\n\n" +
+                            "List: lists the inventory of cars\n\n" +
+                            "Compare [n1] [n2]: compares two cars\n\n" +
+                            "Select [n]: selects car No. n and shows the details\n\n" +
+                            "Engine: shows the details of the engine of the selected car\n\n" +
+                            "Interior: Show the details of the interior of the selected car\n\n" +
+                            "Trunk: Show the items in the trunk of the selected car\n\n" +
+                            "Options: show the details of options installed on the selected car\n\n" +
+                            "Quit: terminate the program\n");
                     break;
                 case "list":
                     String list = dealership.ListAllCars();
