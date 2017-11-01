@@ -48,13 +48,28 @@ public class Dealership {
     
     public String ListAllCars() {
         String result = "";
-        for (Car car : cars) {
-            result += car.toString() + "\n";
+        for (int i = 0; i < cars.length; i++) {
+            result += cars[i].toString() + "\n";
         }
       return result;      
 }
     public void SelectedCar(int index){
         
+    }
+    public String OpenTrunk(){
+        return null;
+    }
+    public String CheckEngine(){
+        return null;
+    }
+    public String CheckInterior(){
+        return null;
+    }
+    public String Compare (int firstCarIndex, int secondCarIndex){
+        return "Comparing " + firstCarIndex + " & " + secondCarIndex;
+    }
+    public String ShowOptions(){
+        return null;
     }
     
     

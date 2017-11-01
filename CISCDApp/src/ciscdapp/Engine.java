@@ -10,5 +10,36 @@ package ciscdapp;
  * @author xxzom
  */
 public class Engine {
+    private FuelType fuelType;
+    private int noOfCylinders;
+    private int capacity;
+    private int horsePower;
+    private float mpg;
+    
+    public Engine(FuelType fuelType, int noOfCylinders, int capacity,
+            int horsePower, float mpg){
+        
+    }
+    public String toString(){
+        String s = fuelType + " " + noOfCylinders + " " + capacity + " " +
+                horsePower + " " + mpg;
+        return s;
+    }
+    public int getHorsePower(){
+        return horsePower;
+    }
+    public float getMpg(){
+        return mpg;
+    }
+    public FuelType getFuelType(){
+        return fuelType;
+    }
+    public int getCapacity(){
+        return capacity;
+    }
+    public int getNoOfCylinders(){
+        return noOfCylinders;
+    }
     
 }
+enum FuelType {Gas, Electric}

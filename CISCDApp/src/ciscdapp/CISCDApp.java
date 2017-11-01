@@ -40,6 +40,8 @@ public class CISCDApp {
                     System.out.println(list);
                     break;
                 case "compare":
+                    System.out.println("Enter number of first car: ");
+                    
                     break;
                 case "select":
                     break;

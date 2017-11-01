@@ -10,7 +10,7 @@ package ciscdapp;
  * @author xxzom
  */
 public class Car {
-    private String make;
+    public String make;
     private int year;
     private String model;
     private int price;
@@ -47,7 +47,25 @@ public class Car {
         this.trunk = trunk;
     }
     public void AddOption(Option option){
-        
+    }
+    public String OpenTrunk(){
+        return null;
+    }
+    public String CheckEngine(){
+        return "";
+    }
+    public String CheckInterior(){
+        return null;
+    }
+    public String ShowOptions(){
+        return null;
+    }
+    public String toString(){
+        String s = color + " " + year + " " + make + " " + model + " " + price;
+        return s;
+    }
+    public String CompareTo(Car otherCar){
+        return null;
     }
 }
 
