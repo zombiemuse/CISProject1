@@ -20,6 +20,7 @@ public class Engine {
             int horsePower, float mpg){
         
     }
+    @Override 
     public String toString(){
         String s = fuelType + " " + noOfCylinders + " " + capacity + " " +
                 horsePower + " " + mpg;
@@ -42,4 +43,4 @@ public class Engine {
     }
     
 }
-enum FuelType {Gas, Electric}
+enum FuelType {Gas, Electric, Hybrid, Diesel}

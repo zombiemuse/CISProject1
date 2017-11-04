@@ -5,11 +5,14 @@
  */
 package ciscdapp;
 
+import java.text.NumberFormat;
+
 /**
  *
  * @author xxzom
  */
 public class Car {
+    NumberFormat nf = NumberFormat.getCurrencyInstance();
     public String make;
     private int year;
     private String model;
@@ -61,7 +64,7 @@ public class Car {
         return null;
     }
     public String toString(){
-        String s = color + " " + year + " " + make + " " + model + " " + price;
+        String s = color + " " + year + " " + make + " " + model + " " + nf.format(price);
         return s;
     }
     public String CompareTo(Car otherCar){

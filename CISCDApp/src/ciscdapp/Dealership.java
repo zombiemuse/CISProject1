@@ -5,11 +5,15 @@
  */
 package ciscdapp;
 
+import java.util.Arrays;
+
 /**
  *
  * @author xxzom
  */
 public class Dealership {
+
+    
     private Car[] cars;
     private Car selectedCar = null;
     
@@ -48,8 +52,9 @@ public class Dealership {
     
     public String ListAllCars() {
         String result = "";
+        int index = 1;
         for (int i = 0; i < cars.length; i++) {
-            result += cars[i].toString() + "\n";
+            result += index++ + ": " + cars[i].toString() + "\n";
         }
       return result;      
 }
