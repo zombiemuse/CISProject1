@@ -1,5 +1,7 @@
 /*
- * Stuff and thangs
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
  */
 package ciscdapp;
 
@@ -8,7 +10,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author Gary McCormack
+ * @author xxzom
  */
 public class CISCDApp {
 
@@ -24,9 +26,10 @@ public class CISCDApp {
         outer:
         while(true){
             System.out.print("> ");
-            String command = sc.next();
+            String command = sc.nextLine();
+            String[] components = command.split(" ");
             command = command.toLowerCase();
-            switch(command){
+            switch(components[0]){
                 case "commands":
                     System.out.println("Commands: shows a list of all available commands\n" +
                             "List: lists the inventory of cars\n" +
@@ -45,29 +48,25 @@ public class CISCDApp {
                 case "compare":
                     break;
                 case "select":
-                    if (sc.hasNextInt()){
-                        int sel = sc.nextInt();
-                        if (sel < 11 && sel > -1){
-                            String select = dealership.SelectedCar(sel);
-                            System.out.println(select);
-                        }
-                        else {
-                            sc.nextLine();
-                        System.out.println("Please enter a valid number.\n");
-                        }
-                    }
-                    else {
-                        sc.nextLine();
-                        System.out.println("Please enter a valid number.\n");
-                    }
+                    int index = Integer.parseInt(components[1]);
+                    String message = dealership.SelectedCar(index);
+                    System.out.println(message);
                     break;
                 case "engine":
+                    message = dealership.CheckEngine();
+                    System.out.println(message);
                     break;
                 case "interior":
+                    message = dealership.CheckInterior();
+                    System.out.println(message);
                     break;
                 case "trunk":
+                    message = dealership.OpenTrunk();
+                    System.out.println(message);
                     break;
                 case "options":
+                    message = dealership.ShowOptions();
+                    System.out.println(message);
                     break;
                 case "quit":
                     while(true){

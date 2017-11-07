@@ -18,6 +18,12 @@ public class Engine {
     
     public Engine(FuelType fuelType, int noOfCylinders, int capacity,
             int horsePower, float mpg){
+        this.fuelType = fuelType;
+        this.noOfCylinders = noOfCylinders;
+        this.capacity = capacity;
+        this.horsePower = horsePower;
+        this.mpg = mpg;
+        
         
     }
     @Override 

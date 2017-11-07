@@ -16,12 +16,27 @@ public class Interior {
     boolean hasMoonRoof;
     
     public Interior(String color1, String color2, boolean hasSunRoof, boolean hasMoonRoof){
-        
+        this.color1 = color1;
+        this.color2 = color2;
+        this.hasSunRoof = hasSunRoof;
+        this.hasMoonRoof = hasMoonRoof;
     }
+    @Override
     public String toString(){
-        String s = color1 + color2 + hasSunRoof + hasMoonRoof;
+        String s = color1 + " and " + color2 + " with sun roof: " + hasSunRoof + " with moon roof: " + hasMoonRoof;
         return s;
     }
-            
+    public String getColor1(){
+        return color1;
+    }
+    public String getColor2(){
+        return color2;
+    }
+    public boolean getHasSunRoof(){
+        return hasSunRoof;
+    }
+    public boolean getHasMoonRoof(){
+        return hasMoonRoof;
+    }
     
 }

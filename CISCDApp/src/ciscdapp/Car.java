@@ -52,16 +52,16 @@ public class Car {
     public void AddOption(Option option){
     }
     public String OpenTrunk(){
-        return null;
+        return trunk.toString();
     }
     public String CheckEngine(){
-        return "";
+        return engine.toString();
     }
     public String CheckInterior(){
-        return null;
+        return interior.toString();
     }
     public String ShowOptions(){
-        return null;
+        return option.toString();
     }
     public String toString(){
         String s = color + " " + year + " " + make + " " + model + " " + nf.format(price);
