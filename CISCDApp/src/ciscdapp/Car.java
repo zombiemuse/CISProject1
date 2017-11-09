@@ -13,7 +13,7 @@ import java.text.NumberFormat;
  */
 public class Car {
     NumberFormat nf = NumberFormat.getCurrencyInstance();
-    public String make;
+    private String make;
     private int year;
     private String model;
     private int price;
@@ -42,7 +42,7 @@ public class Car {
     }
     public void SetEngine(Engine engine){
         this.engine = engine;
-}
+    }
     public void SetInterior(Interior interior){
         this.interior = interior;
     }
@@ -50,6 +50,9 @@ public class Car {
         this.trunk = trunk;
     }
     public void AddOption(Option option){
+        for (int i = 0; i < Car.Option[].length; i++){
+            
+        }
     }
     public String OpenTrunk(){
         return trunk.toString();
@@ -66,6 +69,9 @@ public class Car {
     public String toString(){
         String s = color + " " + year + " " + make + " " + model + " " + nf.format(price);
         return s;
+    }
+    public String carSelect(){
+        return color + " " + year + " " + make + " " + model;
     }
     public String CompareTo(Car otherCar){
         return null;

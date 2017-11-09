@@ -38,5 +38,6 @@ public class Interior {
     public boolean getHasMoonRoof(){
         return hasMoonRoof;
     }
+            
     
 }

@@ -5,6 +5,9 @@
  */
 package ciscdapp;
 
+import java.util.Arrays;
+import java.util.Scanner;
+
 /**
  *
  * @author xxzom
@@ -22,7 +25,9 @@ public class Dealership {
         car.SetInterior(interior);
         Trunk trunk = new Trunk(true, true, true, true, "Black");
         car.SetTrunk(trunk);
-        Option option = new Option("option 1", "option one");
+        Option option = new Option("GPS", "Global Positioning System");
+        car.AddOption(option);
+        option = new Option("Heated Seats", "Warms your seats");
         car.AddOption(option);
         cars[0] = car;
         
@@ -33,7 +38,7 @@ public class Dealership {
         car.SetInterior(interior);
         trunk = new Trunk(true, false, true, true, "Beige");
         car.SetTrunk(trunk);
-        option = new Option("option2", "option two");
+        option = new Option("Premium Audio System", "Subwoofer and box");
         car.AddOption(option);
         cars[1] = car;
         
@@ -128,7 +133,7 @@ public class Dealership {
 }
     public String SelectedCar(int index){
         selectedCar = cars[index - 1];
-        String s = "Car no. " + index + " selected.\n" + cars[index - 1].toString();
+        String s = "The " + selectedCar.carSelect() + " is great! You can view engine, interior, and trunk of the car";
         return s;
     }
     public String OpenTrunk(){
@@ -146,4 +151,7 @@ public class Dealership {
     public String ShowOptions(){
         return selectedCar.ShowOptions().toString();
     }
+    
+    
 }
+

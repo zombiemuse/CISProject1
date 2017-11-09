@@ -1,7 +1,5 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Stuff and thangs
  */
 package ciscdapp;
 
@@ -10,7 +8,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author xxzom
+ * @author Gary McCormack
  */
 public class CISCDApp {
 
@@ -18,8 +16,8 @@ public class CISCDApp {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println("Welcome to this fake ass car dealership!"
-                + "\nTo see what you can do, enter Commands: ");
+        System.out.println("Welcome to CIS department's Car Dealership!"
+                + "\nTo view a list of commands, enter Commands: ");
         Scanner sc = new Scanner(System.in);
         NumberFormat nf = NumberFormat.getCurrencyInstance();
         Dealership dealership = new Dealership();
@@ -46,47 +44,74 @@ public class CISCDApp {
                     System.out.println(list);
                     break;
                 case "compare":
+                    String message = dealership.Compare(0,0);
+                    System.out.println(message);
                     break;
                 case "select":
+                    try {
                     int index = Integer.parseInt(components[1]);
-                    String message = dealership.SelectedCar(index);
+                    message = dealership.SelectedCar(index);
                     System.out.println(message);
+                    }
+                    catch (Exception e){
+                        System.out.println("Please enter the vehicle number. \"select (number)\"");
+                    }
                     break;
                 case "engine":
+                    try {
                     message = dealership.CheckEngine();
                     System.out.println(message);
+                    }
+                    catch (Exception e){
+                        System.out.println("You first need to select a car to view its engine details");
+                    }
                     break;
                 case "interior":
+                    try {
                     message = dealership.CheckInterior();
                     System.out.println(message);
+                    }
+                    catch (Exception e){
+                        System.out.println("You first need to select a car to view its interior details");
+                    }
                     break;
                 case "trunk":
+                    try {
                     message = dealership.OpenTrunk();
                     System.out.println(message);
+                    }
+                    catch (Exception e){
+                        System.out.println("You first need to select a car to view its trunk details");
+                    }
                     break;
                 case "options":
+                    try {
                     message = dealership.ShowOptions();
                     System.out.println(message);
+                    }
+                    catch (Exception e){
+                        System.out.println("You first need to select a car to view its options");
+                    }
                     break;
                 case "quit":
                     while(true){
-                    System.out.println("Hey! Where are you going? You sure you want to leave? (Y/N): ");
+                    System.out.println("Do you wish to leave the dealership? (Y/N): ");
                     String answer = sc.next();
                     answer = answer.toLowerCase();
                     if (answer.equalsIgnoreCase("n")){
-                        System.out.println("That's what I thought, bitch");
+                        System.out.println("Please enter a command");
                         break;
                     }
                     else if (answer.equalsIgnoreCase("y")){
-                        System.out.println("Bye, Felicia!");
+                        System.out.println("Thank you for using CIS department's car dealership application!");
                         break outer;
                     }
                     else 
-                        System.out.println("Really? " + answer + "?" + "\nTry again fuckwad");
+                        System.out.println(answer + " is not a valid option");
                     }
-                    break;
+                    continue;
                 default:
-                    System.out.println("Dude! " + command + " was not an option!\nDo it again!");
+                    System.out.println(command + " is not a valid option!\nTry again!");
                     
             }
         }
