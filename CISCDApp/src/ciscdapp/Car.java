@@ -85,12 +85,48 @@ public class Car {
     public String CompareTo(Car otherCar){
         String result = "";
         if(this.price > otherCar.price)
-            result += "Car A is more expensive than car B.\n";
+            result += year + " " + make + " " + model + " is more expensive\n";
         else if (this.price < otherCar.price)
-            result += "Car B is more expensive than car A.\n";
+            result += otherCar.year + " " + otherCar.make + " " + otherCar.model + " is more expensive\n";
         else 
-            result += "Car A nad B are the same price.\n";
+            result += "Both vehicles are the same price.\n";
         
+        if (this.engine.getMpg() > otherCar.engine.getMpg())
+            result += year + " " + make + " " + model + " has better mpg\n";
+        else if (this.engine.getMpg() < otherCar.engine.getMpg())
+            result += otherCar.year + " " + otherCar.make + " " + otherCar.model + " has better mpg\n";
+        else
+            result += "Both vehicles have the same mpg\n";
+        
+        if (this.year > otherCar.year)
+            result += year + " " + make + " " + model + " is newer\n";
+        else if (this.year < otherCar.year)
+            result += otherCar.year + " " + otherCar.make + " " + otherCar.model + " is newer\n";
+        else
+            result += "Both vehicles were made in the same year\n";
+        
+        if (this.engine.getFuelType() == otherCar.engine.getFuelType())
+            result += "Both vehicles use " + engine.getFuelType() + "\n";
+        else 
+            result += year + " " + make + " " + model + " uses " + this.engine.getFuelType() + " while the " 
+                    + otherCar.year + " " + otherCar.make + " " + otherCar.model + " uses " + otherCar.engine.getFuelType() + "\n";
+        
+        if (this.engine.getHorsePower() > otherCar.engine.getHorsePower())
+            result += year + " " + make + " " + model + " has a more powerful engine\n";
+        else if (this.engine.getHorsePower() < otherCar.engine.getHorsePower())
+            result += otherCar.year + " " + otherCar.make + " " + otherCar.model + " has a more powerful engine\n";
+        else 
+            result += "Both vehicles have the same horsepower\n";
+        
+        if (this.engine.getNoOfCylinders() > otherCar.engine.getNoOfCylinders())
+            result += year + " " + make + " " + model + " has more cylinders\n";
+        else if (this.engine.getNoOfCylinders() < otherCar.engine.getNoOfCylinders())
+            result += otherCar.year + " " + otherCar.make + " " + otherCar.model + " has more cylinders\n";
+        else
+            result += "Both vehicles have the same number of cylinders\n";
+        
+        
+                    
         return result;
     }
 }

@@ -28,8 +28,8 @@ public class Engine {
     }
     @Override 
     public String toString(){
-        String s = fuelType + " " + noOfCylinders + " " + capacity + " " +
-                horsePower + " " + mpg;
+        String s = "Uses " + fuelType + ", " + noOfCylinders + " cylinders,  " + capacity + "cc, " +
+                horsePower + " hp, " + mpg + " average mpg";
         return s;
     }
     public int getHorsePower(){

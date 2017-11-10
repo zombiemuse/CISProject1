@@ -5,6 +5,9 @@
  */
 package ciscdapp;
 
+import java.util.Arrays;
+import java.util.Scanner;
+
 /**
  *
  * @author xxzom
@@ -39,27 +42,27 @@ public class Dealership {
         car.SetInterior(interior);
         trunk = new Trunk(true, false, true, true, "Beige");
         car.SetTrunk(trunk);
-        options = new Option("GPS", "Global Positioning System");
+        options = new Option("Navigation", "Touch screen navigation");
         car.AddOption(options);
-        options = new Option("Heated Seats", "Warms your seats");
+        options = new Option("Premium Sound", "Premium sound system");
         car.AddOption(options);
         options = new Option("Cup Holders", "A handy holder for your cup");
         car.AddOption(options);
         
         cars[1] = car;
         
-        car = new Car("Honda", 2014, "Accord", 19000, "Silver", CarType.Sedan);
+        car = new Car("Honda", 2014, "Accord", 19500, "Silver", CarType.Sedan);
         engine = new Engine(FuelType.Gas, 4, 2400, 189, 28);
         car.SetEngine(engine);
         interior = new Interior("Bugandy", "Black", true, false);
         car.SetInterior(interior);
         trunk = new Trunk(true, false, false, true, "");
         car.SetTrunk(trunk);
-        options = new Option("GPS", "Global Positioning System");
+        options = new Option("Wheels", "Alloy wheels");
         car.AddOption(options);
         options = new Option("Heated Seats", "Warms your seats");
         car.AddOption(options);
-        options = new Option("Cup Holders", "A handy holder for your cup");
+        options = new Option("Interior Lights", "Designer interior lighting");
         car.AddOption(options);
         cars[2] = car;
         
@@ -87,9 +90,9 @@ public class Dealership {
         car.SetTrunk(trunk);
        options = new Option("GPS", "Global Positioning System");
         car.AddOption(options);
-        options = new Option("Heated Seats", "Warms your seats");
+        options = new Option("Interior Lights", "Designer interior lighting");
         car.AddOption(options);
-        options = new Option("Cup Holders", "A handy holder for your cup");
+        options = new Option("Wheels", "Alloy wheels");
         car.AddOption(options);
         cars[4] = car;
         
@@ -100,11 +103,11 @@ public class Dealership {
         car.SetInterior(interior);
         trunk = new Trunk(true, false, true, true, "Beige");
         car.SetTrunk(trunk);
-       options = new Option("GPS", "Global Positioning System");
+       options = new Option("Camera", "Integrated back-up camera");
         car.AddOption(options);
         options = new Option("Heated Seats", "Warms your seats");
         car.AddOption(options);
-        options = new Option("Cup Holders", "A handy holder for your cup");
+        options = new Option("Push Button Start", "Starts the car with a push of a button");
         car.AddOption(options);
         cars[5] = car;
         
@@ -115,11 +118,11 @@ public class Dealership {
         car.SetInterior(interior);
         trunk = new Trunk(false, false, false, true, "");
         car.SetTrunk(trunk);
-        options = new Option("GPS", "Global Positioning System");
+        options = new Option("Smart Key", "Smart key system");
         car.AddOption(options);
-        options = new Option("Heated Seats", "Warms your seats");
+        options = new Option("Collision Detection", "Collision detection system");
         car.AddOption(options);
-        options = new Option("Cup Holders", "A handy holder for your cup");
+        options = new Option("Navigation", "Touch screen navigation");
         car.AddOption(options);
         cars[6] = car;
         
@@ -130,11 +133,11 @@ public class Dealership {
         car.SetInterior(interior);
         trunk = new Trunk(true, false, true, false, "Coffee");
         car.SetTrunk(trunk);
-        options = new Option("GPS", "Global Positioning System");
+        options = new Option("Leather", "Leather seats and trim");
         car.AddOption(options);
         options = new Option("Heated Seats", "Warms your seats");
         car.AddOption(options);
-        options = new Option("Cup Holders", "A handy holder for your cup");
+        options = new Option("Camera", "Integrated back-up camera");
         car.AddOption(options);
         cars[7] = car;
         
@@ -145,6 +148,12 @@ public class Dealership {
         car.SetInterior(interior);
         trunk = new Trunk(false, false, true, false, "Wine");
         car.SetTrunk(trunk);
+        options = new Option("Push Button Start", "Starts the car with a push of a button");
+        car.AddOption(options);
+        options = new Option("Camera", "Integrated back-up camera");
+        car.AddOption(options);
+        options = new Option("Wheels", "Alloy wheels");
+        car.AddOption(options);
         cars[8] = car;
         
         car = new Car("Chevrolet", 2015, "Silverado 1500", 30800, "Black", CarType.Truck);
@@ -154,11 +163,11 @@ public class Dealership {
         car.SetInterior(interior);
         trunk = new Trunk(false, false, false, true, "");
         car.SetTrunk(trunk);
-        options = new Option("GPS", "Global Positioning System");
+        options = new Option("Collision Detection", "Collision detection system");
+        car.AddOption(options);
+        options = new Option("Navigation", "Touch screen navigation");
         car.AddOption(options);
         options = new Option("Heated Seats", "Warms your seats");
-        car.AddOption(options);
-        options = new Option("Cup Holders", "A handy holder for your cup");
         car.AddOption(options);
         cars[9] = car;
     }
@@ -194,4 +203,7 @@ public class Dealership {
     public String ShowOptions(){
         return selectedCar.ShowOptions().toString();
     }
+    
+    
 }
+

@@ -14,6 +14,8 @@ public class Interior {
     private String color2;
     boolean hasSunRoof;
     boolean hasMoonRoof;
+    String sun = "";
+    String moon = "";
     
     public Interior(String color1, String color2, boolean hasSunRoof, boolean hasMoonRoof){
         this.color1 = color1;
@@ -23,7 +25,18 @@ public class Interior {
     }
     @Override
     public String toString(){
-        String s = color1 + " and " + color2 + " with sun roof: " + hasSunRoof + " with moon roof: " + hasMoonRoof;
+        String s = null;
+        if (hasSunRoof == true){
+            s = color1 + " and " + color2 + " with sun roof";
+        }
+        
+        if (hasMoonRoof == true){       
+            s = color1 + " and " + color2 + " with moon roof";
+        }
+        
+        if (hasSunRoof == false && hasMoonRoof == false){
+            s= color1 + " and " + color2;
+        }
         return s;
     }
     public String getColor1(){
@@ -38,4 +51,6 @@ public class Interior {
     public boolean getHasMoonRoof(){
         return hasMoonRoof;
     }
+            
+    
 }

@@ -1,7 +1,5 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the templ  in the editor.
+ * Stuff and thangs
  */
 package ciscdapp;
 
@@ -10,7 +8,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author xxzom
+ * @author Gary McCormack
  */
 public class CISCDApp {
 
@@ -29,6 +27,7 @@ public class CISCDApp {
             String command = sc.nextLine();
             String[] components = command.split(" ");
             command = command.toLowerCase();
+            String message;
             switch(components[0]){
                 case "commands":
                     System.out.println("Commands: shows a list of all available commands\n" +
@@ -46,11 +45,16 @@ public class CISCDApp {
                     System.out.println(list);
                     break;
                 case "compare":
+                    try {
                     int carIndex1, carIndex2;
                     carIndex1 = Integer.parseInt(components[1]);
                     carIndex2 = Integer.parseInt(components[2]);
-                    String message = dealership.Compare(carIndex1, carIndex2);
+                    message = dealership.Compare(carIndex1, carIndex2);
                     System.out.println(message);
+                    }
+                    catch (Exception e){
+                        System.out.println("Please enter a valid number");
+                    }
                     break;
                 case "select":
                     try {

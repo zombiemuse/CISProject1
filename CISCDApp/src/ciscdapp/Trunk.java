@@ -25,8 +25,27 @@ public class Trunk {
     }
     @Override
     public String toString(){
-        return "Spare tire: " + hasSpareTire + "First aid kit: " + hasFirstAidKit + "Carpet: " + hasCarpet + carpetColor
-                + "Jack: " + hasJack;
+        String tire = null;
+        String kit = null;
+        String carpet = null;
+        String jack = null;
+        if (hasSpareTire == true)
+            tire = "Yes";
+        else
+            tire = "No";
+        if (hasFirstAidKit == true)
+            kit = "Yes";
+        else
+            kit = "No";
+        if (hasCarpet == true)
+            carpet = "Yes";
+        else 
+            carpet = "No";
+        if (hasJack == true)
+            jack = "Yes";
+        else jack = "No";
+        return "Spare tire: " + tire + "\nFirst aid kit: " + kit + "\nCarpet: " + carpet + " " + carpetColor
+                + "\nJack: " + jack;
     }
     public boolean getHasSpareTire(){
         return hasSpareTire;
@@ -43,4 +62,5 @@ public class Trunk {
     public String getCarpetColor(){
         return carpetColor;
     }
+    
 }
