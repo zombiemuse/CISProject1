@@ -22,7 +22,7 @@ public class Car {
     private Engine engine;
     private Interior interior;
     private Trunk trunk;
-    private Option[] option;
+    private Option[] options;
     
     public Car(String make, int year, String model, int price, String color, CarType type){
         this.make = make;
@@ -31,6 +31,7 @@ public class Car {
         this.price = price;
         this.color = color;
         this.type = type;
+        options = new Option[3];
     }
     public Car(String make, int year, String model, int price, String color, CarType type, 
             Engine engine, Interior interior, Trunk trunk){
@@ -50,9 +51,12 @@ public class Car {
         this.trunk = trunk;
     }
     public void AddOption(Option option){
-        for (int i = 0; i < Car.Option[].length; i++){
-            
-        }
+       for (int i = 0; i < options.length; i++){
+           if(options[i] == null){
+               options[i] = option;
+               break;
+           }
+       }
     }
     public String OpenTrunk(){
         return trunk.toString();
@@ -64,7 +68,12 @@ public class Car {
         return interior.toString();
     }
     public String ShowOptions(){
-        return option.toString();
+        String result = "";
+        for (int i = 0; i < options.length; i++){
+            result += options[i].toString() + "\n";
+   
+           }
+        return result;
     }
     public String toString(){
         String s = color + " " + year + " " + make + " " + model + " " + nf.format(price);
@@ -74,7 +83,15 @@ public class Car {
         return color + " " + year + " " + make + " " + model;
     }
     public String CompareTo(Car otherCar){
-        return null;
+        String result = "";
+        if(this.price > otherCar.price)
+            result += "Car A is more expensive than car B.\n";
+        else if (this.price < otherCar.price)
+            result += "Car B is more expensive than car A.\n";
+        else 
+            result += "Car A nad B are the same price.\n";
+        
+        return result;
     }
 }
 

@@ -43,5 +43,4 @@ public class Trunk {
     public String getCarpetColor(){
         return carpetColor;
     }
-    
 }

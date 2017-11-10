@@ -19,13 +19,8 @@ public class Option {
     }
     @Override
     public String toString(){
-        return name + " " + description;
+        return name + " " + description + "\n";
     }
-    public String getName(){
-        return name;
-    }
-    public String getDescription(){
-        return description;
-    }
+    
     
 }
