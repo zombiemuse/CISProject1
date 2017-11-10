@@ -52,7 +52,7 @@ public class Car {
     }
     public void AddOption(Option option){
        for (int i = 0; i < options.length; i++){
-           if(options[i] == null){
+            if(options[i] == null){
                options[i] = option;
                break;
            }
@@ -75,6 +75,7 @@ public class Car {
            }
         return result;
     }
+    @Override
     public String toString(){
         String s = color + " " + year + " " + make + " " + model + " " + nf.format(price);
         return s;

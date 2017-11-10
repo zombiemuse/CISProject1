@@ -88,7 +88,7 @@ public class Dealership {
         car.SetInterior(interior);
         trunk = new Trunk(true, true, true, true, "Charcoal");
         car.SetTrunk(trunk);
-       options = new Option("GPS", "Global Positioning System");
+        options = new Option("GPS", "Global Positioning System");
         car.AddOption(options);
         options = new Option("Interior Lights", "Designer interior lighting");
         car.AddOption(options);
@@ -103,7 +103,7 @@ public class Dealership {
         car.SetInterior(interior);
         trunk = new Trunk(true, false, true, true, "Beige");
         car.SetTrunk(trunk);
-       options = new Option("Camera", "Integrated back-up camera");
+        options = new Option("Camera", "Integrated back-up camera");
         car.AddOption(options);
         options = new Option("Heated Seats", "Warms your seats");
         car.AddOption(options);
@@ -178,7 +178,7 @@ public class Dealership {
         for (int i = 0; i < cars.length; i++) {
             result += index++ + ": " + cars[i].toString() + "\n";
         }
-      return result;      
+        return result;      
 }
     public String SelectedCar(int index){
         selectedCar = cars[index - 1];
