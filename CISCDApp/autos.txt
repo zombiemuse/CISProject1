@@ -1,0 +1,10 @@
+Ford,2015,Escape,17500,White,SUV,Gas,4,1600,178,22,Black,Red,false,true,true,true,true,true,Black,GPS,Global Positioning System,Heated Seats, Warms your seats,Cup Holders,A handy holder for your cup
+Ford,2013,Escape,15000,Black,SUV,Gas,4,2500,231,22,Beige,Black,false,false,true,false,true,true,Beige,Navigation,Touch screen navigation,Premium Sound,Premium sound system,Cup Holders,A handy holder for your cup
+Honda,2014,Accord,19000,Silver,Sedan,Gas,4,2400,189,28,Burgandy,Black,true,false,true,false,false,true, ,Wheels,Alloy wheels,Heated Seats, Warms your seats,Interior Lights,Designer interior lighting
+Honda,2014,Accord,20000,White Pearl,Sedan,Gas,4,2400,189,28,Grey,Black,false,false,false,true,true,false,Grey,GPS,Global Positioning System,Heated Seats, Warms your seats,Cup Holders,A handy holder for your cup
+Honda,2015,Accord Hybrid,19500,Black Pearl,Sedan,Hybrid,4,2000,141,50,White,Charcoal,false,true,true,true,true,true,Charcoal,GPS,Global Positioning System,Interior Lights,Designer interior lighting,Wheels,Alloy wheels
+Honda,2016,Civic,19500,Green,Sedan,Gas,4,2000,158,27,Beige,Grey,true,false,true,false,true,true,Beige,Camera,Integrated back-up camera,Heated Seats, Warms your seats,Push Button Start,Starts the car with a push of a button
+Toyota,2017,Corolla,16000,Silver Metallic,Sedan,Gas,4,1800,132,28,Grey,Beige,false,false,false,false,false,true, ,Smart Key,Smart key system,Collision Detection,Collision detection system,Navigation,Touch screen navigation
+Toyota,2015,Corolla,14300,Slate Metallic,Sedan,Gas,4,1800,132,28,Coffee,Charcoal,false,true,true,false,true,false,Coffee,Leather,Leather seats and trim,Heated Seats,Warms your seats,Camera,Integrated back-up camera
+Toyota,2018,C-HR,23600,Silver Metallic,CrossOver,Gas,4,2000,144,27,Wine,Cream,true,false,false,false,true,false,Wine,Push Button Start,Starts the car with a push of a button,Camera,Integrated back-up camera,Wheels,Alloy wheels
+Chevrolet,2015,Silverado 1500,30800,Black,Truck,Gas,6,4300,285,18,Beige,Grey,false,false,false,false,false,true, ,Collision Detection,Collision detection system,Navigation,Touch Screen Navigation,Heated Seats,Warms your seats
