@@ -61,157 +61,6 @@ public class Dealership {
         catch(Exception e) {
             System.out.println(e);
         }
-//        cars = new Car[10];
-//        Car car = new Car("Ford", 2015, "Escape", 17500, "White", CarType.SUV);
-//        Engine engine = new Engine(FuelType.Gas, 4, 1600, 178, 22);
-//        car.SetEngine(engine);
-//        Interior interior = new Interior("black", "red", false, true);
-//        car.SetInterior(interior);
-//        Trunk trunk = new Trunk(true, true, true, true, "Black");
-//        car.SetTrunk(trunk);
-//        Option options = new Option("GPS", "Global Positioning System");
-//        car.AddOption(options);
-//        options = new Option("Heated Seats", "Warms your seats");
-//        car.AddOption(options);
-//        options = new Option("Cup Holders", "A handy holder for your cup");
-//        car.AddOption(options);
-//        cars[0] = car;
-//        
-//        car = new Car("Ford", 2013, "Escape", 15000, "Black", CarType.SUV);
-//        engine = new Engine(FuelType.Gas, 4, 2500, 231, 22);
-//        car.SetEngine(engine);
-//        interior = new Interior("Beige", "Black", false, false);
-//        car.SetInterior(interior);
-//        trunk = new Trunk(true, false, true, true, "Beige");
-//        car.SetTrunk(trunk);
-//        options = new Option("Navigation", "Touch screen navigation");
-//        car.AddOption(options);
-//        options = new Option("Premium Sound", "Premium sound system");
-//        car.AddOption(options);
-//        options = new Option("Cup Holders", "A handy holder for your cup");
-//        car.AddOption(options);
-//        
-//        cars[1] = car;
-//        
-//        car = new Car("Honda", 2014, "Accord", 19500, "Silver", CarType.Sedan);
-//        engine = new Engine(FuelType.Gas, 4, 2400, 189, 28);
-//        car.SetEngine(engine);
-//        interior = new Interior("Bugandy", "Black", true, false);
-//        car.SetInterior(interior);
-//        trunk = new Trunk(true, false, false, true, "");
-//        car.SetTrunk(trunk);
-//        options = new Option("Wheels", "Alloy wheels");
-//        car.AddOption(options);
-//        options = new Option("Heated Seats", "Warms your seats");
-//        car.AddOption(options);
-//        options = new Option("Interior Lights", "Designer interior lighting");
-//        car.AddOption(options);
-//        cars[2] = car;
-//        
-//        car = new Car("Honda", 2014, "Accord", 20000, "White Pearl", CarType.Sedan);
-//        engine = new Engine(FuelType.Gas, 4, 2400, 189, 28);
-//        car.SetEngine(engine);
-//        interior = new Interior("Grey", "Black", false, false);
-//        car.SetInterior(interior);
-//        trunk = new Trunk(false, true, true, false, "Grey");
-//        car.SetTrunk(trunk);
-//        options = new Option("GPS", "Global Positioning System");
-//        car.AddOption(options);
-//        options = new Option("Heated Seats", "Warms your seats");
-//        car.AddOption(options);
-//        options = new Option("Cup Holders", "A handy holder for your cup");
-//        car.AddOption(options);
-//        cars[3] = car;
-//        
-//        car = new Car("Honda", 2015, "Accord Hybrid", 19500, "Black Pearl", CarType.Sedan);
-//        engine = new Engine(FuelType.Hybrid, 4, 2000, 141, 50);
-//        car.SetEngine(engine);
-//        interior = new Interior("White", "Charcoal", false, true);
-//        car.SetInterior(interior);
-//        trunk = new Trunk(true, true, true, true, "Charcoal");
-//        car.SetTrunk(trunk);
-//        options = new Option("GPS", "Global Positioning System");
-//        car.AddOption(options);
-//        options = new Option("Interior Lights", "Designer interior lighting");
-//        car.AddOption(options);
-//        options = new Option("Wheels", "Alloy wheels");
-//        car.AddOption(options);
-//        cars[4] = car;
-//        
-//        car = new Car("Honda", 2016, "Civic", 19500, "Green", CarType.Sedan);
-//        engine = new Engine(FuelType.Gas, 4, 2000, 158, 27);
-//        car.SetEngine(engine);
-//        interior = new Interior("Beige", "Grey", true, false);
-//        car.SetInterior(interior);
-//        trunk = new Trunk(true, false, true, true, "Beige");
-//        car.SetTrunk(trunk);
-//        options = new Option("Camera", "Integrated back-up camera");
-//        car.AddOption(options);
-//        options = new Option("Heated Seats", "Warms your seats");
-//        car.AddOption(options);
-//        options = new Option("Push Button Start", "Starts the car with a push of a button");
-//        car.AddOption(options);
-//        cars[5] = car;
-//        
-//        car = new Car("Toyota", 2017, "Corolla", 16000, "Silver Metallic", CarType.Sedan);
-//        engine = new Engine(FuelType.Gas, 4, 1800, 132, 28);
-//        car.SetEngine(engine);
-//        interior = new Interior("Grey", "Beige", false, false);
-//        car.SetInterior(interior);
-//        trunk = new Trunk(false, false, false, true, "");
-//        car.SetTrunk(trunk);
-//        options = new Option("Smart Key", "Smart key system");
-//        car.AddOption(options);
-//        options = new Option("Collision Detection", "Collision detection system");
-//        car.AddOption(options);
-//        options = new Option("Navigation", "Touch screen navigation");
-//        car.AddOption(options);
-//        cars[6] = car;
-//        
-//        car = new Car("Toyota", 2015, "Corolla", 14300, "Slate Metallic", CarType.Sedan);
-//        engine = new Engine(FuelType.Gas, 4, 1800, 132, 28);
-//        car.SetEngine(engine);
-//        interior = new Interior("Coffee", "Charcoal", false, true);
-//        car.SetInterior(interior);
-//        trunk = new Trunk(true, false, true, false, "Coffee");
-//        car.SetTrunk(trunk);
-//        options = new Option("Leather", "Leather seats and trim");
-//        car.AddOption(options);
-//        options = new Option("Heated Seats", "Warms your seats");
-//        car.AddOption(options);
-//        options = new Option("Camera", "Integrated back-up camera");
-//        car.AddOption(options);
-//        cars[7] = car;
-//        
-//        car = new Car("Toyota", 2018, "C-HR", 23600, "Silver Metallic", CarType.CrossOver);
-//        engine = new Engine(FuelType.Gas, 4, 2000, 144, 27);
-//        car.SetEngine(engine);
-//        interior = new Interior("Wine", "Cream", true, false);
-//        car.SetInterior(interior);
-//        trunk = new Trunk(false, false, true, false, "Wine");
-//        car.SetTrunk(trunk);
-//        options = new Option("Push Button Start", "Starts the car with a push of a button");
-//        car.AddOption(options);
-//        options = new Option("Camera", "Integrated back-up camera");
-//        car.AddOption(options);
-//        options = new Option("Wheels", "Alloy wheels");
-//        car.AddOption(options);
-//        cars[8] = car;
-//        
-//        car = new Car("Chevrolet", 2015, "Silverado 1500", 30800, "Black", CarType.Truck);
-//        engine = new Engine(FuelType.Gas, 6, 4300, 285, 18);
-//        car.SetEngine(engine);
-//        interior = new Interior("Beige", "Grey", false, false);
-//        car.SetInterior(interior);
-//        trunk = new Trunk(false, false, false, true, "");
-//        car.SetTrunk(trunk);
-//        options = new Option("Collision Detection", "Collision detection system");
-//        car.AddOption(options);
-//        options = new Option("Navigation", "Touch screen navigation");
-//        car.AddOption(options);
-//        options = new Option("Heated Seats", "Warms your seats");
-//        car.AddOption(options);
-//        cars[9] = car;
     }
     
     public String ListAllCars() {
@@ -245,7 +94,34 @@ public class Dealership {
     public String ShowOptions(){
         return selectedCar.ShowOptions().toString();
     }
+    public String addCar(int year, String make, String model, int price, String color, CarType carType){
+        try {
+            int index = 0;
+            File inventoryFile = new File("autos.txt");
+            PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter(inventoryFile, true))); 
+            Scanner sc = new Scanner(System.in);
+            System.out.println("Enter year: ");
+            int num = sc.nextInt();
+            System.out.println("Enter make: ");
+            String text = sc.nextLine();
+            System.out.println("Enter model: ");
+            text = sc.nextLine();
+            System.out.println("Enter price: ");
+            num = sc.nextInt();
+            System.out.println("Enter color: ");
+            text = sc.nextLine();
+            System.out.println("Enter car type (Sedan = 0, SUV = 1, CrossOver = 2, Truck = 3): ");
+            num = sc.nextInt();
+            CarType type = CarType.values()[index];
+        
+        }
+        catch (Exception e){
+            System.out.println(e);
+        }
+        
+    return "The car was successfully added to the inventory. The inventory now contains " + cars.length + " cars";
     
+}
     
 }
 

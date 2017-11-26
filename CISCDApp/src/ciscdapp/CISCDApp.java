@@ -102,6 +102,11 @@ public class CISCDApp {
                         System.out.println("You first need to select a car to view its options");
                     }
                     break;
+                case "add":
+                    message = dealership.addCar(int year, String make, String model, int price, String color, CarType carType);
+                    break;
+                case "delete":
+                    break;
                 case "quit":
                     while(true){
                     System.out.println("Do you wish to leave the dealership? (Y/N): ");
