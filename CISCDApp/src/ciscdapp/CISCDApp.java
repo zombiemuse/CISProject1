@@ -1,5 +1,7 @@
 /*
- * Stuff and thangs
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the templ  in the editor.
  */
 package ciscdapp;
 
@@ -8,7 +10,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author Gary McCormack
+ * @author xxzom
  */
 public class CISCDApp {
 
@@ -38,6 +40,8 @@ public class CISCDApp {
                             "Interior: Show the details of the interior of the selected car\n" +
                             "Trunk: Show the items in the trunk of the selected car\n" +
                             "Options: show the details of options installed on the selected car\n" +
+                            "Add: adds a car to the inventory\n" +
+                            "Delete: deletes a car from the inventory" +
                             "Quit: terminate the program\n");
                     break;
                 case "list":
@@ -103,7 +107,26 @@ public class CISCDApp {
                     }
                     break;
                 case "add":
-                    message = dealership.addCar(int year, String make, String model, int price, String color, CarType carType);
+                    try{
+                    System.out.println("Enter year: ");
+                    int num = sc.nextInt();
+                    System.out.println("Enter make: ");
+                    String text = sc.nextLine();
+                    System.out.println("Enter model: ");
+                    text = sc.nextLine();
+                    System.out.println("Enter price: ");
+                    num = sc.nextInt();
+                    System.out.println("Enter color: ");
+                    text = sc.nextLine();
+                    System.out.println("Enter car type (Sedan = 0, SUV = 1, CrossOver = 2, Truck = 3): ");
+                    num = sc.nextInt();
+                    CarType type = CarType.values()[sc.nextInt()];
+                    message = dealership.addCar(num, text, text, num, text, type);
+                    System.out.println(message);
+                    }
+                    catch (Exception e){
+                        System.out.println("Please enter the right shit...*sigh*");
+                    }
                     break;
                 case "delete":
                     break;

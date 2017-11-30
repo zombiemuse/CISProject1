@@ -96,23 +96,17 @@ public class Dealership {
     }
     public String addCar(int year, String make, String model, int price, String color, CarType carType){
         try {
-            int index = 0;
+            Car car = new Car(make, year, model, price, color, carType);
+            cars = java.util.Arrays.copyOf(cars, cars.length + 1);
+            cars [cars.length - 1] = car;
+            
+            try{
             File inventoryFile = new File("autos.txt");
-            PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter(inventoryFile, true))); 
-            Scanner sc = new Scanner(System.in);
-            System.out.println("Enter year: ");
-            int num = sc.nextInt();
-            System.out.println("Enter make: ");
-            String text = sc.nextLine();
-            System.out.println("Enter model: ");
-            text = sc.nextLine();
-            System.out.println("Enter price: ");
-            num = sc.nextInt();
-            System.out.println("Enter color: ");
-            text = sc.nextLine();
-            System.out.println("Enter car type (Sedan = 0, SUV = 1, CrossOver = 2, Truck = 3): ");
-            num = sc.nextInt();
-            CarType type = CarType.values()[index];
+            PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter(inventoryFile, true)));
+            
+            out.println(make + "," + year + "," + model + "," + price + "," + color + "," + carType + "," +
+                    "Gas," + "4," + "1800,")
+            
         
         }
         catch (Exception e){
@@ -124,4 +118,3 @@ public class Dealership {
 }
     
 }
-
